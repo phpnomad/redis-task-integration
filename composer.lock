@@ -1,0 +1,56 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "da57188d8e9c0a8001cd252a23cd5f6f",
+    "packages": [
+        {
+            "name": "phpnomad/tasks",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpnomad/tasks.git",
+                "reference": "5b29183bcc110927d9f3077cec606b2b8b2d1882"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpnomad/tasks/zipball/5b29183bcc110927d9f3077cec606b2b8b2d1882",
+                "reference": "5b29183bcc110927d9f3077cec606b2b8b2d1882",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPNomad\\Tasks\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Standiford",
+                    "email": "alex@standiford.us"
+                }
+            ],
+            "homepage": "https://github.com/phpnomad/tasks",
+            "support": {
+                "issues": "https://github.com/phpnomad/tasks/issues",
+                "source": "https://github.com/phpnomad/tasks/tree/2.0.0"
+            },
+            "time": "2025-05-28T16:38:34+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

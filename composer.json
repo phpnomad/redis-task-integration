@@ -1,21 +1,16 @@
 {
-    "name": "phoenix/repository",
+    "name": "phpnomad/redis-task-integration",
     "description": "",
     "type": "library",
-    "homepage": "https://github.com/phoenix/core",
+    "homepage": "https://github.com/phpnomad/redis-task-integration",
     "readme": "README.md",
-    "license": "MIT",
+    "license": "GPL",
     "scripts": {
         "php-cs-fixer": "php-cs-fixer fix"
     },
     "autoload": {
         "psr-4": {
-            "Phoenix\\Core\\": "lib/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Phoenix\\Core\\Tests\\": "tests/"
+            "PHPNomad\\Redis\\Tasks\\Integration": "lib/"
         }
     },
     "authors": [
@@ -24,12 +19,13 @@
             "email": "alex@standiford.us"
         }
     ],
-    "require-dev": {
-        "phpnomad/tests": "^0.1.0 || ^0.3.0"
-    },
     "config": {
         "allow-plugins": {
             "phpstan/extension-installer": true
         }
+    },
+    "require": {
+        "phpnomad/tasks": "*",
+        "ext-redis": "*"
     }
 }
