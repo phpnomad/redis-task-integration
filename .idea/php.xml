@@ -79,6 +79,7 @@
       <path value="$PROJECT_DIR$/vendor/phoenix" />
       <path value="$PROJECT_DIR$/vendor" />
       <path value="$PROJECT_DIR$/vendor/phpnomad/tasks" />
+      <path value="$PROJECT_DIR$/vendor/phpnomad/logger" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

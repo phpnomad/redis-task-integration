@@ -23,6 +23,7 @@ class RedisWorkerService
     {
         while (true) {
             try {
+                $this->logger->info('Waiting for events...');
                 $data = $this->redis->blPop([static::QUEUE], 0);
                 if (!isset($data[1])) {
                     continue;
@@ -31,10 +32,12 @@ class RedisWorkerService
                 $task = unserialize($data[1]);
 
                 if (!$task instanceof Task) {
+                    $this->logger->error('Task ignored because it is not an instance of Task',['instance' => $task]);
                     continue;
                 }
 
                 foreach ($this->registry->getHandlers($task) as $handler) {
+                    $this->logger->info('Running handler for task', ['task' => $task::getId(), 'handler' => $handler::class]);
                     $handler($task);
                 }
             } catch (\Throwable $e) {
