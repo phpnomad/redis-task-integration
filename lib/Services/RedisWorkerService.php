@@ -41,7 +41,11 @@ class RedisWorkerService
                     $handler($task);
                 }
             } catch (\Throwable $e) {
-                $this->logger->logException($e);
+                $this->logger->error($e->getMessage(), [
+                    'trace' => $e->getTraceAsString(),
+                    'file' => $e->getFile(),
+                    'line' => $e->getLine(),
+                ]);
                 sleep(1);
             }
         }
