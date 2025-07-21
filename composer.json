@@ -26,6 +26,7 @@
     },
     "require": {
         "phpnomad/tasks": "*",
-        "ext-redis": "*"
+        "ext-redis": "*",
+        "phpnomad/logger": "^1.0"
     }
 }
