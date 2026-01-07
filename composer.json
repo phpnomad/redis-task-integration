@@ -25,8 +25,9 @@
         }
     },
     "require": {
-        "phpnomad/tasks": "*",
-        "ext-redis": "*",
-        "phpnomad/logger": "^1.0"
+        "phpnomad/tasks": "^2.1",
+        "phpnomad/auth": "^1.0",
+        "phpnomad/logger": "^1.0",
+        "ext-redis": "*"
     }
 }
