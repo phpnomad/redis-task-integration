@@ -2,6 +2,7 @@
     "name": "phpnomad/redis-task-integration",
     "description": "",
     "type": "library",
+    "version": "1.0.0",
     "homepage": "https://github.com/phpnomad/redis-task-integration",
     "readme": "README.md",
     "license": "GPL",
